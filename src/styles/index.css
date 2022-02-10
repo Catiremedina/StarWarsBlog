@@ -1,3 +1,9 @@
-/* 
-    General Styles
-*/
+
+.card {
+    width: 17rem;
+    margin: 5px;
+}
+
+.logoi {
+    width: 4%;
+}
