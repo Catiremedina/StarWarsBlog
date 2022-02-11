@@ -8,13 +8,13 @@ import { Context } from "../store/appContext";
 
 const Single = item => {
 	const { store, actions } = useContext(Context);
-	const { uid, category } = useParams();
+	const { uid, endpoint } = useParams();
 	const [detail, setDetail] = useState({});
 	useEffect(() => {
 		if (uid) {
 			for (let arr in store) {
-				if (arr == category) {
-					let newItem = store[category].find(item => {
+				if (arr == endpoint) {
+					let newItem = store[endpoint].find(item => {
 						return item.uid == uid;
 					});
 					setDetail(newItem);
@@ -45,7 +45,7 @@ const Single = item => {
 			</div>
 			<div className="row">
 				<div className="col character__info">
-					<h1> Red info</h1>
+					<h1> </h1>
 				</div>
 			</div>
 		</div>

@@ -21,7 +21,7 @@ const Card = ({ item, endpoint }) => {
 					<i
 						className="fas fa-heart"
 						onClick={() => {
-							actions.adFav(item.name, category);
+							actions.adFav(item.name, endpoint);
 						}}
 					/>
 				</div>

@@ -48,7 +48,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				}
 		},
 
-		addFavorites: (name, endpoint) => {
+		adFav: (name, endpoint) => {
 			const store = getStore();
 			let person;
 			let exists = store.favs.find(item => {
