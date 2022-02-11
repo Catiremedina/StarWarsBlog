@@ -24,8 +24,7 @@ const injectContext = PassedComponent => {
 		useEffect(() => {
 			state.actions.getData("planets");
 			state.actions.getData("people");
-			state.actions.getData("vehicles");
-
+			state.actions.getData("vehicles")
 
 		}, []);
 

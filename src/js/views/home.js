@@ -15,7 +15,7 @@ export const Home = props => {
 			</div>
 			<div className="row d-flex horizon">
 				{store.people.map(item => {
-					return <Card key={item.uid} item={item} seccion="people" />;
+					return <Card key={item.uid} item={item} endpoint="people" />;
 				})}
 			</div>
 
@@ -26,7 +26,7 @@ export const Home = props => {
 			</div>
 			<div className="row d-flex horizon">
 				{store.planets.map(item => {
-					return <Card key={item.uid} item={item} seccion="planets" />;
+					return <Card key={item.uid} item={item} endpoint="planets" />;
 				})}
 			</div>
 
@@ -37,7 +37,7 @@ export const Home = props => {
 			</div>
 			<div className="row d-flex horizon">
 				{store.vehicles.map(item => {
-					return <Card key={item.uid} item={item} seccion="vehicles" />;
+					return <Card key={item.uid} item={item} endpoint="vehicles" />;
 				})}
 			</div>
 		</div>
